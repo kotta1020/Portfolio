@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Arial Rounded MT Bold", "Hiragino Maru Gothic ProN",
+    "Yu Gothic", system-ui, sans-serif;
+  --font-sans: "Hiragino Kaku Gothic ProN", "Yu Gothic", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  background: #fff8dc;
+}
+
+::selection {
+  color: #ffffff;
+  background: #1f2433;
+}
+
+@layer components {
+  .border-3 {
+    border-width: 3px;
+  }
+
+  .border-4 {
+    border-width: 4px;
+  }
+
+  .section-wrap {
+    @apply px-5 py-16 sm:px-8 sm:py-20 lg:px-12;
+  }
+
+  .section-wrap > * {
+    @apply mx-auto max-w-6xl;
+  }
+
+  .sticker-card {
+    @apply rounded-[1.65rem] border-[3px] border-ink shadow-[7px_7px_0_#1f2433] transition duration-200 hover:-translate-y-1 hover:shadow-[10px_10px_0_#1f2433];
+  }
+
+  .hero-button {
+    @apply inline-flex min-h-14 items-center justify-center rounded-full border-[3px] border-ink px-7 text-base font-black shadow-[6px_6px_0_#1f2433] transition hover:-translate-y-1 hover:shadow-[8px_8px_0_#1f2433];
+  }
+
+  .nav-chip {
+    @apply rounded-full border-[3px] border-ink bg-cream px-3 py-2 transition hover:bg-sunpop;
+  }
+}
+
+.halftone {
+  background-image: radial-gradient(#1f2433 1.2px, transparent 1.2px);
+  background-size: 18px 18px;
+}
+
+.checker-mask {
+  background:
+    linear-gradient(45deg, rgba(31, 36, 51, 0.12) 25%, transparent 25%) 0 0 /
+      24px 24px,
+    linear-gradient(45deg, transparent 75%, rgba(31, 36, 51, 0.12) 75%) 0 0 /
+      24px 24px,
+    linear-gradient(45deg, transparent 75%, rgba(31, 36, 51, 0.12) 75%) 12px
+      12px / 24px 24px,
+    linear-gradient(45deg, rgba(31, 36, 51, 0.12) 25%, transparent 25%) 12px
+      12px / 24px 24px;
+}
+
+.pixel-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.42) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.42) 2px, transparent 2px);
+  background-size: 28px 28px;
+}
+
+.burst {
+  clip-path: polygon(
+    50% 0%,
+    61% 28%,
+    91% 9%,
+    73% 39%,
+    100% 50%,
+    72% 61%,
+    91% 91%,
+    61% 72%,
+    50% 100%,
+    39% 72%,
+    9% 91%,
+    28% 61%,
+    0% 50%,
+    28% 39%,
+    9% 9%,
+    39% 28%
+  );
+}
+
+.hero-screen::after {
+  content: "";
+  position: absolute;
+  left: 22%;
+  right: 22%;
+  bottom: -18px;
+  height: 14px;
+  border: 3px solid #1f2433;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.marquee-band {
+  overflow: hidden;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 0;
+  animation: marquee 24s linear infinite;
+  white-space: nowrap;
+}
+
+.marquee-track span {
+  flex: 0 0 auto;
+  padding-right: 2rem;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
