@@ -1,3 +1,53 @@
+import {
+  awardWorks,
+  characters,
+  popularWorks,
+  snsLinks,
+  type Character,
+  type VideoWork,
+} from "@/data/portfolio";
+import Link from "next/link";
+
+const paletteClass = {
+  pink: "bg-candy",
+  blue: "bg-soda",
+  yellow: "bg-sunpop",
+  green: "bg-limepop",
+  purple: "bg-grape text-white",
+  orange: "bg-[#ff9f43]",
+};
+
+function categoryColorClass(category: string) {
+  switch (category) {
+    case "ショート動画":
+      return "bg-candy";
+    case "AIコメディ":
+      return "bg-soda";
+    case "MV":
+      return "bg-sunpop";
+    case "コンテスト作品":
+      return "bg-grape text-white";
+    default:
+      return "bg-white";
+  }
+}
+
+const softPaletteClass = {
+  pink: "from-[#ffd3e6] via-white to-[#ffef7a]",
+  blue: "from-[#b7edff] via-white to-[#d7ff68]",
+  yellow: "from-[#ffe680] via-white to-[#ffbfd8]",
+  green: "from-[#dbff79] via-white to-[#9decff]",
+  purple: "from-[#d8c7ff] via-white to-[#ffd273]",
+  orange: "from-[#ffd2a6] via-white to-[#8af0ff]",
+};
+
+const snsPaletteClass = [
+  "bg-soda",
+  "bg-[#ff3131] text-white",
+  "bg-sunpop",
+  "bg-ink text-white",
+  "bg-[#ff8a1f] text-white",
+];
 
 function SectionHeading({
   kicker,
@@ -218,21 +268,19 @@ export default function Home() {
             <p className="mt-6 max-w-2xl text-lg font-bold leading-9 text-ink/78 sm:text-xl">
               AIで作った謎動画、爆笑ショート、変なキャラ、たまに感動させようとして失敗した作品を置いています。
             </p>
-            <div className="mt-8 max-w-2xl rounded-[2rem] border-3 border-ink bg-white/55 p-3 shadow-[7px_7px_0_#1f2433] sm:p-4">
-              <div className="grid gap-3 sm:grid-cols-2">
-                <a className="hero-button bg-white text-ink" href="#popular">
-                  動画を見る
-                </a>
-                <a className="hero-button bg-white text-ink" href="#characters">
-                  キャラ図鑑を見る
-                </a>
-                <a className="hero-button bg-white text-ink" href="#behind">
-                  制作の裏側を見る
-                </a>
-                <a className="hero-button bg-white text-ink" href="#sns">
-                  SNSを見る
-                </a>
-              </div>
+            <div className="mt-8 grid max-w-2xl gap-3 sm:grid-cols-2">
+              <a className="hero-button bg-white text-ink" href="#popular">
+                動画を見る
+              </a>
+              <a className="hero-button bg-white text-ink" href="#characters">
+                キャラ図鑑を見る
+              </a>
+              <a className="hero-button bg-white text-ink" href="#behind">
+                制作の裏側を見る
+              </a>
+              <a className="hero-button bg-white text-ink" href="#sns">
+                SNSを見る
+              </a>
             </div>
           </div>
           <div className="mt-10 flex justify-center lg:absolute lg:right-10 lg:top-36 lg:mt-0 xl:right-20">
@@ -248,3 +296,123 @@ export default function Home() {
       </section>
 
       <section className="marquee-band border-y-3 border-ink bg-ink py-3 text-white">
+        <div className="marquee-track text-sm font-black uppercase">
+          <span>
+            Short Movie / AI Comedy / Music Video / Contest Works / Short Movie /
+            AI Comedy / Music Video / Contest Works /
+          </span>
+          <span aria-hidden="true">
+            Short Movie / AI Comedy / Music Video / Contest Works / Short Movie /
+            AI Comedy / Music Video / Contest Works /
+          </span>
+        </div>
+      </section>
+
+      <section className="section-wrap bg-[#dff9ff]" id="popular">
+        <SectionHeading
+          kicker="HIT-ish"
+          title="人気のおふざけ"
+          note="代表作っぽいもの、コメント欄がざわついたもの、本人も理由がわからないもの。"
+        />
+        <div className="grid gap-6 lg:grid-cols-3">
+          {popularWorks.map((work, index) => (
+            <WorkCard
+              embedVideo
+              key={work.title}
+              work={work}
+              index={index}
+            />
+          ))}
+        </div>
+        <div className="mx-auto mt-8 max-w-3xl">
+          <Link
+            className="hero-button w-full bg-candy py-5 text-center text-white sm:text-lg"
+            href="/works"
+          >
+            作品集ページでまとめて見る
+          </Link>
+        </div>
+      </section>
+
+      <section className="section-wrap" id="awards">
+        <SectionHeading
+          kicker="AWARDS"
+          title="受賞歴"
+        />
+        <div className="grid gap-6 lg:grid-cols-3">
+          {awardWorks.map((work, index) => (
+            <WorkCard
+              embedVideo
+              key={work.title}
+              work={work}
+              index={index}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="section-wrap bg-[#fff1c0]" id="characters">
+        <SectionHeading
+          kicker="CHARACTER FILE"
+          title="キャラ図鑑"
+        />
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {characters.map((character, index) => (
+            <CharacterCard
+              character={character}
+              index={index}
+              key={character.name}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="section-wrap" id="behind">
+        <SectionHeading
+          kicker="BACKSTAGE"
+          title="制作の裏側"
+        />
+        <p className="mx-auto -mt-2 mb-8 max-w-3xl text-center text-base font-bold leading-8 text-ink/75 sm:text-lg sm:leading-9">
+          作品だけでは伝わらない、制作の裏側をまとめました。
+          <br />
+          アイデアの出し方、制作中の裏話、使っているAIツール、これから作ってみたい作品、注目しているクリエイターまで。
+          <br />
+          こったの頭の中をちょっとのぞいてみませんか？
+        </p>
+        <div className="mx-auto max-w-3xl">
+          <Link
+            className="hero-button w-full bg-candy py-5 text-center text-white sm:text-lg"
+            href="/backstage"
+          >
+            こったの頭の中をのぞきにいく
+          </Link>
+        </div>
+      </section>
+
+      <section className="section-wrap bg-ink text-white" id="sns">
+        <div className="mx-auto max-w-5xl text-center">
+          <p className="mb-4 inline-flex rounded-full border-3 border-white bg-candy px-4 py-2 text-sm font-black text-white shadow-[4px_4px_0_#fff]">
+            FOLLOW THE FUN
+          </p>
+          <h2 className="font-display text-4xl font-black leading-tight sm:text-6xl">
+            SNS
+          </h2>
+          <p className="mt-4 text-base font-black text-white/80 sm:text-lg">
+            ぜひフォローしてください。
+          </p>
+          <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+            {snsLinks.map((link, index) => (
+              <a
+                className={`min-h-16 rounded-full border-3 border-white px-6 py-4 text-lg font-black shadow-[5px_5px_0_#fff] transition hover:-translate-y-1 ${snsPaletteClass[index % snsPaletteClass.length]}`}
+                href={link.url}
+                key={link.label}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
