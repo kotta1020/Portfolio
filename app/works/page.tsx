@@ -132,9 +132,13 @@ export default function WorksPage() {
 
       <section className="px-5 py-12 sm:px-8 sm:py-16 lg:px-12">
         <div className="mx-auto grid max-w-6xl gap-8">
-          {workCatalog.map((work, index) => (
-            <WorkCatalogCard key={`${work.title}-${index}`} work={work} index={index} />
-          ))}
+          {[...workCatalog].reverse().map((work, index) => {
+            const originalIndex = workCatalog.length - 1 - index;
+
+            return (
+              <WorkCatalogCard key={`${work.title}-${originalIndex}`} work={work} index={originalIndex} />
+            );
+          })}
         </div>
         <div className="mx-auto mt-10 max-w-md">
           <Link
