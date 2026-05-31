@@ -288,6 +288,30 @@ export const additionalWorks: VideoWork[] = [
     category: "AIコメディ",
     palette: "blue",
   },
+  {
+    title: "屁こきアイドル冥土ちゃん",
+    comment: "アイドルライブの裏側にカメラが潜入したら後悔した件",
+    url: "https://youtu.be/bbzJ2O-ZsfM",
+    youtubeId: "bbzJ2O-ZsfM",
+    category: "ショート動画",
+    palette: "pink",
+  },
+  {
+    title: "世界一のプロの接客",
+    comment: "極上の接客でお客様がメロメロになりました",
+    url: "https://youtu.be/rPSuTdLBMKA",
+    youtubeId: "rPSuTdLBMKA",
+    category: "ショート動画",
+    palette: "pink",
+  },
+  {
+    title: "リフティング女子",
+    comment: "なにも考えずにご覧ください",
+    url: "https://youtube.com/shorts/FESjNi58C1E",
+    youtubeId: "FESjNi58C1E",
+    category: "ショート動画",
+    palette: "pink",
+  },
 ];
 
 export const workCatalog: VideoWork[] = [
