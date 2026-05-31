@@ -19,6 +19,7 @@ export type Character = {
   image?: string;
   imageAlt?: string;
   imagePosition?: string;
+  sheetUrl: string;
 };
 
 export type BehindNote = {
@@ -348,6 +349,7 @@ export const characters: Character[] = [
     image: "/characters/noriko-sheet.jpg",
     imageAlt: "のり子の四面図",
     imagePosition: "18% center",
+    sheetUrl: "/characters/noriko-character-sheet.png",
   },
   {
     name: "こった姫",
@@ -358,6 +360,7 @@ export const characters: Character[] = [
     image: "/characters/kotta-hime-4view.png",
     imageAlt: "こった姫の四面図",
     imagePosition: "18% center",
+    sheetUrl: "/characters/kotta-hime-sheet.jpg",
   },
   {
     name: "こったフェアリーちゃん",
@@ -368,6 +371,7 @@ export const characters: Character[] = [
     image: "/characters/kotta-fairy.png",
     imageAlt: "こったフェアリーちゃんの挿絵",
     imagePosition: "center 42%",
+    sheetUrl: "/characters/kotta-fairy-character-sheet.png",
   },
 ];
 

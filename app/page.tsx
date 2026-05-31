@@ -177,7 +177,13 @@ function CharacterCard({
   index: number;
 }) {
   return (
-    <article className="sticker-card relative overflow-hidden bg-white p-5">
+    <a
+      aria-label={`${character.name}のキャラクターシートを新しいタブで開く`}
+      className="sticker-card relative block overflow-hidden bg-white p-5 text-inherit no-underline"
+      href={character.sheetUrl}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       <div
         className={`absolute -right-5 -top-5 h-24 w-24 rotate-12 border-3 border-ink ${paletteClass[character.palette]}`}
       />
@@ -214,7 +220,7 @@ function CharacterCard({
           {character.catchphrase}
         </p>
       </div>
-    </article>
+    </a>
   );
 }
 
