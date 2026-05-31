@@ -355,6 +355,7 @@ export default function Home() {
         <SectionHeading
           kicker="CHARACTER FILE"
           title="キャラ図鑑"
+          note="フリー素材です。好きなだけ許可なしでお使いください。"
         />
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {characters.map((character, index) => (
