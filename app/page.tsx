@@ -259,7 +259,7 @@ export default function Home() {
               AIおふざけ動画クリエイターの作品保管庫
             </p>
             <h1 className="max-w-3xl font-display text-5xl font-black leading-[1.08] text-ink sm:text-7xl lg:text-8xl">
-              週7で
+              週７で
               <span className="mx-2 inline-block rotate-[-2deg] rounded-[1.25rem] border-3 border-ink bg-candy px-3 text-white shadow-[7px_7px_0_#1f2433]">
                 ふざけて
               </span>
