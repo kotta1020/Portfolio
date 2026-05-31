@@ -67,7 +67,7 @@ function SectionHeading({
         {title}
       </h2>
       {note ? (
-        <p className="mx-auto mt-3 max-w-2xl text-base font-bold leading-8 text-ink/75">
+        <p className="mx-auto mt-3 max-w-2xl text-base font-bold leading-8 text-ink/75 sm:text-lg">
           {note}
         </p>
       ) : null}
