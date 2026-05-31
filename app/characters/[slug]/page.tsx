@@ -60,6 +60,12 @@ export default async function CharacterSheetPage({
             />
           </div>
 
+          <p className="mx-auto mt-6 max-w-3xl text-center text-base font-bold leading-8 text-ink/75 sm:text-lg">
+            このキャラクターはフリー素材です。保存して自由にお使いください。
+            <br />
+            画像を保存したい場合は「画像だけ開く」から保存してください。
+          </p>
+
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <Link className="hero-button bg-white" href="/#characters">
               キャラ図鑑に戻る
