@@ -12,6 +12,7 @@ export type VideoWork = {
 
 export type Character = {
   name: string;
+  slug: string;
   role: string;
   description: string;
   catchphrase: string;
@@ -342,6 +343,7 @@ export const genres = [
 export const characters: Character[] = [
   {
     name: "のり子",
+    slug: "noriko",
     role: "海苔の眉毛のカリスマ",
     description: "こった姫から進化した、ミネラル豊富な天然記念物",
     catchphrase: "寝る時もこのポーズだから肩こりエグい",
@@ -353,6 +355,7 @@ export const characters: Character[] = [
   },
   {
     name: "こった姫",
+    slug: "kotta-hime",
     role: "自称姫（S級妖怪）",
     description: "なんでもあり、自由すぎる姫",
     catchphrase: "ああああああああ、これバグってるよ",
@@ -364,6 +367,7 @@ export const characters: Character[] = [
   },
   {
     name: "こったフェアリーちゃん",
+    slug: "kotta-fairy",
     role: "現場を散らかす妖精",
     description: "話を全部ややこしくする、めんどくさい存在",
     catchphrase: "だいたい魔法でなんとかする予定なのだ",
