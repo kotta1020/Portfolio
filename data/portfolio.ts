@@ -389,6 +389,10 @@ export const tools = [
 
 export const behindNotes: BehindNote[] = [
   {
+    title: "どうやって動画を作っているか、という手の内をバラそうと思います",
+    url: "https://kottaprincess.substack.com/p/c10?r=89s2ap",
+  },
+  {
     title: "アイデアは、うなり声をあげても降ってこない",
     url: "https://open.substack.com/pub/kottaprincess/p/be1?r=89s2ap&utm_campaign=post&utm_medium=web",
   },
