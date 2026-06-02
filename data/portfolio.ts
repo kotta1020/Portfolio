@@ -25,7 +25,6 @@ export type Character = {
 
 export type BehindNote = {
   title: string;
-  body: string;
   url: string;
 };
 
@@ -391,12 +390,10 @@ export const tools = [
 export const behindNotes: BehindNote[] = [
   {
     title: "アイデアは、うなり声をあげても降ってこない",
-    body: "僕の頭の中で勝手に始まる、ちょっと変な連想ゲームのお話",
     url: "https://open.substack.com/pub/kottaprincess/p/be1?r=89s2ap&utm_campaign=post&utm_medium=web",
   },
   {
     title: "ふだん使っているAIツールの話",
-    body: "ふだん使っているAIツールの話",
     url: "https://substack.com/@kottaprincess/note/c-262706333?r=89s2ap&utm_source=notes-share-action&utm_medium=web",
   },
 ];
