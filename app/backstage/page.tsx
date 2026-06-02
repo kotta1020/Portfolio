@@ -59,12 +59,12 @@ export default function BackstagePage() {
               <div className="relative pl-4">
                 <div className="mb-5 flex flex-wrap items-center gap-3">
                   <span className="rounded-full border-3 border-[#2b241d] bg-white px-4 py-2 text-xs font-black shadow-[3px_3px_0_#2b241d]">
-                    FILE {String(index + 1).padStart(2, "0")}
+                    FILE {String(behindNotes.length - index).padStart(2, "0")}
                   </span>
                 </div>
                 <div className="rounded-[0.8rem] border-3 border-[#2b241d] bg-[linear-gradient(#fffdf7_0_46px,#d8c7a7_47px_49px)] bg-[length:100%_49px] p-4">
                   <p className="min-h-20 text-sm font-bold leading-7 text-[#2b241d]/76 sm:text-base">
-                    {note.body}
+                    {note.title}
                   </p>
                 </div>
                 <span className="mt-4 inline-flex min-h-12 w-full items-center justify-center rounded-full border-3 border-[#2b241d] bg-[#2b241d] px-5 text-sm font-black text-white shadow-[4px_4px_0_#ffb84d] transition group-hover:bg-[#3a3127]">
