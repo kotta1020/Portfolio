@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "週7でふざけてます",
   description:
     "AIで作った謎動画、爆笑ショート、変なキャラ、パロディ作品の保管庫。",
+  verification: {
+    google: "vQX1iMmPe6z078zYbB4H9RAtK-ortVFxHpMzgvQYGvo",
+  },
 };
 
 export default function RootLayout({
