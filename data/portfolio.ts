@@ -389,6 +389,30 @@ export const tools = [
 
 export const behindNotes: BehindNote[] = [
   {
+    title: "言語化力がないと、AIの世界では負けるよね",
+    url: "https://kottaprincess.substack.com/p/1ai?r=89s2ap",
+  },
+  {
+    title: "僕がCPPにあまり乗り気じゃない理由",
+    url: "https://kottaprincess.substack.com/p/097?r=89s2ap",
+  },
+  {
+    title: "こった姫が誕生するまでの秘話、すべて話します",
+    url: "https://kottaprincess.substack.com/p/fb8?r=89s2ap",
+  },
+  {
+    title: "あなたはAIに月いくら課金してますか？僕は...",
+    url: "https://kottaprincess.substack.com/p/ai3?r=89s2ap",
+  },
+  {
+    title: "僕がおふざけ動画ばかり作る理由",
+    url: "https://kottaprincess.substack.com/p/ac8?r=89s2ap",
+  },
+  {
+    title: "ギャップを生みだせないと、誰からも見てもらえないという悲惨な現実",
+    url: "https://kottaprincess.substack.com/p/ai?r=89s2ap",
+  },
+  {
     title: "どうやって動画を作っているか、という手の内をバラそうと思います",
     url: "https://kottaprincess.substack.com/p/c10?r=89s2ap",
   },
