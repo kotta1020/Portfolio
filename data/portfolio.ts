@@ -376,6 +376,18 @@ export const characters: Character[] = [
     imagePosition: "center 42%",
     sheetUrl: "/characters/kotta-fairy-character-sheet.png",
   },
+  {
+    name: "冥土ちゃん",
+    slug: "meido-chan",
+    role: "伝説のメイド",
+    description: "誰よりも先に鼻にティッシュをつめる",
+    catchphrase: "少々お待ちください。いま鼻の接客中なのだ",
+    palette: "purple",
+    image: "/characters/meido-chan.png",
+    imageAlt: "冥土ちゃんの画像",
+    imagePosition: "center",
+    sheetUrl: "/characters/meido-chan-sheet.png",
+  },
 ];
 
 export const tools = [
