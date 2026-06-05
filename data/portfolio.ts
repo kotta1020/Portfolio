@@ -379,8 +379,8 @@ export const characters: Character[] = [
   {
     name: "冥土ちゃん",
     slug: "meido-chan",
-    role: "伝説のメイド",
-    description: "誰よりも先に鼻にティッシュをつめる",
+    role: "伝説の屁こきメイド",
+    description: "お客様に鼻ティッシュのぬくもりを解説するプロ",
     catchphrase: "少々お待ちください。いま鼻の接客中なのだ",
     palette: "purple",
     image: "/characters/meido-chan.png",
