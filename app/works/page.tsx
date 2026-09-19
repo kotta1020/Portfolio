@@ -12,7 +12,7 @@ function categoryColorClass(category: string) {
     case "コンテスト作品":
       return "bg-grape text-white";
     case "ゲーム":
-      return "bg-limepop";
+      return "bg-[#ff8a3d]";
     default:
       return "bg-white";
   }

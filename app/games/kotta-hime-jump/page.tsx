@@ -21,7 +21,7 @@ export default function KottaHimeJumpPage() {
 
           <article className="rounded-[2rem] border-[5px] border-ink bg-white p-4 shadow-[10px_10px_0_#1f2433] sm:p-6">
             <div className="mb-5 flex flex-wrap items-center gap-3">
-              <span className="rounded-full border-3 border-ink bg-limepop px-4 py-2 text-xs font-black shadow-[3px_3px_0_#1f2433]">
+              <span className="rounded-full border-3 border-ink bg-[#ff8a3d] px-4 py-2 text-xs font-black shadow-[3px_3px_0_#1f2433]">
                 ゲーム
               </span>
               <span className="rounded-full border-3 border-ink bg-white px-4 py-2 text-xs font-black shadow-[3px_3px_0_#1f2433]">
