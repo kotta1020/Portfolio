@@ -345,7 +345,7 @@ export const characters: Character[] = [
     slug: "kotta-hime",
     role: "自称姫（S級妖怪）",
     description: "なんでもあり、自由すぎる姫",
-    catchphrase: "寝る時もこのポーズだから肩こりエグい",
+    catchphrase: "眉毛は海苔なのだ",
     palette: "blue",
     image: "/characters/鶏を食べようとする.png",
     imageAlt: "鶏を食べようとするこった姫",
