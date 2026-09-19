@@ -11,15 +11,17 @@ function categoryColorClass(category: string) {
       return "bg-sunpop";
     case "コンテスト作品":
       return "bg-grape text-white";
+    case "ゲーム":
+      return "bg-limepop";
     default:
       return "bg-white";
   }
 }
 
 function WorkCatalogCard({ work, index }: { work: VideoWork; index: number }) {
-  const thumbnailSrc = work.youtubeId
+  const thumbnailSrc = work.thumbnailSrc ?? (work.youtubeId
     ? `https://i.ytimg.com/vi/${work.youtubeId}/hqdefault.jpg`
-    : null;
+    : null);
 
   return (
     <article className="sticker-card overflow-hidden bg-white p-4 sm:p-5">

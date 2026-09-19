@@ -5,6 +5,7 @@ export type VideoWork = {
   slug?: string;
   videoSrc?: string;
   youtubeId?: string;
+  thumbnailSrc?: string;
   badge?: string;
   category: string;
   palette: "pink" | "blue" | "yellow" | "green" | "purple" | "orange";
@@ -313,6 +314,15 @@ export const additionalWorks: VideoWork[] = [
     category: "ショート動画",
     palette: "pink",
   },
+  {
+    title: "こった姫ジャンプ",
+    comment: "15秒走ってゴールまでたどり着け。スペースキー／画面タップで遊べる、こった姫のジャンプゲーム。",
+    url: "/games/kotta-hime-jump",
+    slug: "kotta-hime-jump",
+    thumbnailSrc: "/games/kotta-hime-jump/thumbnail.png",
+    category: "ゲーム",
+    palette: "green",
+  },
 ];
 
 export const workCatalog: VideoWork[] = [
@@ -337,6 +347,7 @@ export const genres = [
   "AIコメディ",
   "MV",
   "コンテスト作品",
+  "ゲーム",
 ];
 
 export const characters: Character[] = [
