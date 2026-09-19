@@ -107,14 +107,6 @@ export const additionalWorks: VideoWork[] = [
     palette: "yellow",
   },
   {
-    title: "こった姫体操",
-    comment: "運動不足のあなた！毎朝この体操をしてダイエットしましょう",
-    url: "https://youtube.com/shorts/EdmtJcnNjPM",
-    youtubeId: "EdmtJcnNjPM",
-    category: "ショート動画",
-    palette: "pink",
-  },
-  {
     title: "もしも猫が猫舌じゃなかったら",
     comment: "AI猫の日にゃんにゃんにゃん選手権。熱湯をガブガブ飲みながら原宿を歩くギャル猫2人",
     url: "https://youtube.com/shorts/dTerzs6yfwo",
@@ -161,14 +153,6 @@ export const additionalWorks: VideoWork[] = [
     youtubeId: "bi8lzIrKCAw",
     category: "ショート動画",
     palette: "pink",
-  },
-  {
-    title: "さよならこった姫",
-    comment: "こった姫アバター、これが最後",
-    url: "https://youtu.be/SUeMb9wvSxs",
-    youtubeId: "SUeMb9wvSxs",
-    category: "AIコメディ",
-    palette: "blue",
   },
   {
     title: "『走れ』",
@@ -243,14 +227,6 @@ export const additionalWorks: VideoWork[] = [
     palette: "purple",
   },
   {
-    title: "メタバースワールドツアー",
-    comment: "みんなやっほー、白いアイコンのあの人を投げちゃうよ",
-    url: "https://youtu.be/HkEaHM_cTUM",
-    youtubeId: "HkEaHM_cTUM",
-    category: "AIコメディ",
-    palette: "blue",
-  },
-  {
     title: "野球観戦",
     comment: "10秒間笑いを我慢してください",
     url: "https://youtu.be/7U4ZdN9CI0o",
@@ -267,28 +243,12 @@ export const additionalWorks: VideoWork[] = [
     palette: "pink",
   },
   {
-    title: "メタバースワールドツアー２",
-    comment: "メタバースで思いっきりふざけたよ",
-    url: "https://youtu.be/9Wn08SCsw9c",
-    youtubeId: "9Wn08SCsw9c",
-    category: "AIコメディ",
-    palette: "blue",
-  },
-  {
     title: "ボリウッドダンス",
     comment: "あまりにもカオス、こったキャラが勢揃い！",
     url: "https://youtu.be/vvLnKJpaQj8",
     youtubeId: "vvLnKJpaQj8",
     category: "ショート動画",
     palette: "pink",
-  },
-  {
-    title: "埋まり幅跳び世界新記録",
-    comment: "世界でひとりしかやってないスポーツで世界新記録が出たようです",
-    url: "https://youtu.be/lYRrtjcLFFI",
-    youtubeId: "lYRrtjcLFFI",
-    category: "AIコメディ",
-    palette: "blue",
   },
   {
     title: "屁こきアイドル冥土ちゃん",
