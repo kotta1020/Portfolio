@@ -371,6 +371,14 @@ export const additionalWorks: VideoWork[] = [
     category: "AIコメディ",
     palette: "blue",
   },
+  {
+    title: "ぶるぶる罰ゲーム",
+    comment: "もうこれは人間の顔じゃない",
+    url: "https://youtu.be/fy2CLJwQrxw",
+    youtubeId: "fy2CLJwQrxw",
+    category: "AIコメディ",
+    palette: "blue",
+  },
 ];
 
 export const workCatalog: VideoWork[] = [
